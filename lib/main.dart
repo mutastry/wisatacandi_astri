@@ -1,6 +1,6 @@
-import 'package:wisatacandi_astri/data/candi_data.dart';
-import 'package:wisatacandi_astri/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:wisatacandi/data/candi_data.dart';
+import 'package:wisatacandi/screens/detail_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       home: DetailScreen(candi:candiList[0]),
     );
-  }p
+  }
 }
 
 

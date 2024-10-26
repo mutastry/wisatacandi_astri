@@ -1,11 +1,11 @@
 {
-    "name": "wisatacandi",
-    "short_name": "wisatacandi",
+    "name": "wisata_candi",
+    "short_name": "wisata_candi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "aplikasi candi",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

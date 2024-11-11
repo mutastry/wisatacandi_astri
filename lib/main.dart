@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:wisatacandi/screens/home_screen.dart';
+// import 'package:wisatacandi_astri/screens/detail_screen.dart';
+// import 'package:wisatacandi_astri/data/candi_data.dart';
+// import 'package:wisatacandi/screens/profile_screen.dart';
+import 'package:wisatacandi_astri/screens/home_screen.dart';
+import 'package:wisatacandi/screens/Search_Screen.dart';
 import 'package:wisatacandi/screens/SignInScreen.dart';
-import 'package:wisatacandi_astri/screens/detail_screen.dart';
-import 'package:wisatacandi_astri/data/candi_data.dart';
+import 'package:wisatacandi/screens/SingUpScreen.dart';
 
-import 'data/candi_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,12 +34,14 @@ class MyApp extends StatelessWidget {
          primary: Colors.deepPurple,
          surface: Colors.deepPurple[50],
         ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       // home: const ProfileScreen
       // home: DetailScreen(candi: candiList[0]),
-      home: Signinscreen(),
+      // home: SignInScreen(),
+      // home: SignUpScreen(),
+      // home: SearchScreen(),
+      home: HomeScreen(),
     );
   }
 }

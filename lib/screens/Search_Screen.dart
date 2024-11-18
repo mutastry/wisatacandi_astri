@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisatacandi_astri/data/candi_data.dart';
+import 'package:wisatacandi/data/candi_data.dart';
 
 import '../models/candi.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wisatacandi/screens/home_screen.dart';
 // import 'package:wisatacandi_astri/screens/detail_screen.dart';
 // import 'package:wisatacandi_astri/data/candi_data.dart';
-import 'package:wisatacandi/screens/profile_screen.dart';
+import 'package:wisatacandi//screens/profile_screen.dart';
 import 'package:wisatacandi_astri/screens/home_screen.dart';
 import 'package:wisatacandi/screens/Search_Screen.dart';
 import 'package:wisatacandi/screens/SignInScreen.dart';
@@ -47,41 +47,76 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainSreen extends StatefulWidget {
-  const MainSreen({super.key});
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  State<MainSreen> createState() => _MainSreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainSreenState extends State<MainSreen> {
+class _MainScreenState extends State<MainScreen> {
   // TODO: 1. Deklarasikan variabel
-  int _CurrentIndex = 0;
-
-  final List<Widget> _children = {
-    const HomeScreen(),
-    const SearchScreen(),
-    const Favoritescreen(),
-    const ProfileScreen(),
-  };
+  int _currentIndex = 0;
+  final List<Widget> _children = [
+    HomeScreen(),
+    SearchScreen(),
+    Favoritescreen(),
+    ProfileScreen(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // TODO: 2. Buat properti body berupa widget yang ditampilakan
-      body: _children {_CurrentIndex},
+      // TODO: 2. Buat properti body berupa widget yang ditampilkan
+      body: _children[_currentIndex],
       // TODO: 3. Buat properti bottomNavigationBar dengan nilai Theme
       bottomNavigationBar: Theme(
-        // TODO: 4. Buat data dan child dari Theme
-        data:  Theme.of(context).copyWith(
-          canvasColor: Colors.deepPurple[50],
+        // TODO: 4. Buat data dan Child dari Theme
+        data: Theme.of(context).copyWith(canvasColor: Colors.deepPurple[50]),
+        child: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                color: Colors.deepPurple,
+              ),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+                color: Colors.deepPurple,
+              ),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite,
+                color: Colors.deepPurple,
+              ),
+              label: 'Favorite',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: Colors.deepPurple,
+              ),
+              label: 'Person',
+            ),
+          ],
+          selectedItemColor: Colors.deepPurple,
+          unselectedItemColor: Colors.deepPurple[100],
+          showSelectedLabels: true,
         ),
-        child: BottomNavigationBar(),
       ),
     );
   }
 }
-
-
 
 

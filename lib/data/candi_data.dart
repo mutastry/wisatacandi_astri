@@ -1,11 +1,14 @@
-import 'package:wisatacandi_astri/models/candi.dart';
+import '../models/candi.dart';
 
 var candiList = [
   Candi(
     name: 'Candi Borobudur',
     location: 'Magelang, Jawa Tengah',
     description:
-    'Candi Borobudur, candi Buddha terbesar di dunia, dibangun oleh penganut Buddha Mahayana pada abad ke-9 di Jawa Tengah, Indonesia. Dengan enam teras dan tiga pelataran melingkar yang dihiasi relief dan arca Buddha, Borobudur adalah tempat suci untuk memuliakan Buddha dan panduan ziarah menuju pencerahan. Meskipun ditinggalkan pada abad ke-10, candi ini ditemukan kembali pada tahun 1814 dan setelah pemugaran besar-besaran, diakui sebagai Situs Warisan Dunia oleh UNESCO.',
+    'Candi Borobudur, candi Buddha terbesar di dunia, dibangun oleh penganut Buddha Mahayana pada abad ke-9 di Jawa Tengah, '
+        'Indonesia. Dengan enam teras dan tiga pelataran melingkar yang dihiasi relief dan arca Buddha, '
+        'Borobudur adalah tempat suci untuk memuliakan Buddha dan panduan ziarah menuju pencerahan. Meskipun ditinggalkan pada abad ke-10,'
+        ' candi ini ditemukan kembali pada tahun 1814 dan setelah pemugaran besar-besaran, diakui sebagai Situs Warisan Dunia oleh UNESCO.',
     built: 'Abad ke-9',
     type: 'Candi Buddha',
     imageAsset: 'images/borobudur.jpeg',
@@ -136,7 +139,7 @@ var candiList = [
     'Candi Singasari adalah situs Hindu-Buddha bersejarah dari Kerajaan Singasari, terletak di Singosari, Malang, Jawa Timur, Indonesia, sekitar 10 km dari Kota Malang. Candi ini merupakan tempat pemujaan Raja Kertanegara, raja terakhir Singasari, yang wafat pada 1292. Terletak di lembah di antara Pegunungan Tengger dan Gunung Arjuno, candi ini dibangun dengan metode menumpuk batu andesit dan diukir dari atas ke bawah.',
     built: 'Abad ke-13',
     type: 'Candi Hindu-Buddha',
-    imageAsset: 'images/singosari.jpeg',
+    imageAsset: 'images/sewu.jpeg',
     imageUrls: [
       'https://media-cdn.tripadvisor.com/media/photo-o/06/c9/d4/f2/candi-singosari.jpg',
       'https://media-cdn.tripadvisor.com/media/photo-o/1a/ca/37/49/candi-cungkup-candirenggo.jpg',

@@ -23,6 +23,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'wisata Candi',
       theme: ThemeData(
+        home: MainScreen()
+          initialRoute: '/'
+          routes: {
+          '/homescreen': (context) => const HomeScreen(),
+          '/signin': (context) => const SignInScreen(),
+          '/signup': (context) => const SignUpScreen(),
+      },
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.deepPurple),
           titleTextStyle: TextStyle(

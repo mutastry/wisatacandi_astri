@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:wisatacandi/screens/home_screen.dart';
 // import 'package:wisatacandi_astri/screens/detail_screen.dart';
 // import 'package:wisatacandi_astri/data/candi_data.dart';
-import 'package:wisatacandi//screens/profile_screen.dart';
-import 'package:wisatacandi_astri/screens/home_screen.dart';
+import 'package:wisatacandi/screens/profile_screen.dart';
+import 'package:wisatacandi/screens/home_screen.dart';
 import 'package:wisatacandi/screens/Search_Screen.dart';
 import 'package:wisatacandi/screens/SignInScreen.dart';
 import 'package:wisatacandi/screens/SingUpScreen.dart';
@@ -24,11 +24,11 @@ class MyApp extends StatelessWidget {
       title: 'wisata Candi',
       theme: ThemeData(
         home: MainScreen()
-          initialRoute: '/'
-          routes: {
-          '/homescreen': (context) => const HomeScreen(),
-          '/signin': (context) => const SignInScreen(),
-          '/signup': (context) => const SignUpScreen(),
+        initialRoute: '/'
+      routes: {
+      '/homescreen': (context) => const HomeScreen(),
+      '/signin': (context) => const SignInScreen(),
+      '/signup': (context) => const SignUpScreen(),
       },
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.deepPurple),
@@ -39,8 +39,8 @@ class MyApp extends StatelessWidget {
         ),
         colorScheme:
         ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
-         primary: Colors.deepPurple,
-         surface: Colors.deepPurple[50],
+          primary: Colors.deepPurple,
+          surface: Colors.deepPurple[50],
         ),
         useMaterial3: true,
       ),
@@ -67,7 +67,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _children = [
     HomeScreen(),
     SearchScreen(),
-    Favoritescreen(),
+    FavoriteScreen(),
     ProfileScreen(),
   ];
 
@@ -125,5 +125,4 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 }
-
 
